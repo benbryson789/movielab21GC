@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+}
+@{
+    @model Movie
+}
+
+<h1>Registration</h1>
+
+<form asp-action="MovieResult">
+    <div>
+        <label>ID</label><br />
+        <input asp-for="@Model.ID" />
+    </div>
+
+    <div>
+        <label>Title</label><br />
+        <input asp-for="@Model.Title" />
+    </div>
+
+    <div>
+        <label>Genre</label>
+        <input asp-for="@Model.Genre" />
+    </div>
+
+    <div>
+        <label>Year</label>
+        <input asp-for="@Model.Year" />
+    </div>
+
+    <div>
+        <label>Actors</label>
+        <input asp-for="@Model.Actors" />
+    </div>
+
+    <div>
+        <label>Directors</label>
+        <input asp-for="@Model.Directors" />
+    </div>
+
+    <div>
+        <input type="submit" value="Submit" class="'btn btn-primary" />
+    </div>
+
+</form>
